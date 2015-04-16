@@ -1,0 +1,7 @@
+Take frame
+Thresh green -> gMask
+copy gMask -> boundsMask
+dilate boundsMask
+erode boundsMask
+invert boundsMask
+OR(gMask, boundsMask) -> alpha channel
